@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <!-- preloader -->
+        <div id="preloader"></div>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                 loader.style.display = "none";
+            });
+        </script>
+        <!-- end preloader -->
+
+         <!-- nav bar -->
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Skills</a>
+                <a href="#my-work-section">My Work</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="bx bx-moon" id="darkMood-icon"></div>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+
+        <!--Home section-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, I am</h3>
+                <h1>Kawthar</h1>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/en/"><i class='bx bxl-tiktok'></i></a>
+                </div>
+                
+                <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <div class="professionl-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0;">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:1;">
+                        <i class='bx bxs-graduation'></i>
+                        <h3>CS Student</h3>
+                    </div>
+                    <div class="profession" style="--i:2;">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:3;">
+                        <i class='bx bxs-graduation'></i>
+                        <h3>CS Student</h3>
+                    </div>
+
+                    <div class="circle"></div>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+                <img src="character-1.png" alt="my-image">
+            </div>
+        </section>
+        <!-- end home-->
+
+        <!-- about section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="character-2.png" alt="image">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <p>Thank you for visiting my website and getting to know me better. I'm Kawthar, a computer science student at the Lebanese university, and a web development student at CodeBrave. My journey in the tech world began 2 years ago when i discovered my love for coding and design. Since then, i’ve honed my skills in various programming languages and design tools,working on multiple projects that blend creativity and technology.
+                </p>
+                <a href="https://codebrave.org/" class="btn">Read More</a>
+            </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- services section-->
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Skills</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-laptop'></i>
+                    <h3>Web Development</h3>
+                    <p>Web development gives me the opportunity designing creative web sites that attract viewers or customers. Coming with new ideas to the market is not an easy task but with professional work everything is possible.</p>
+                    <a href="https://blog.hubspot.com/website/website-development#:~:text=Web%20development%20refers%20to%20the,or%20web%20application%20to%20life." class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Programming Languages</h3>
+                    <p>So far i have learned 4 programming  languages: Python, HTML, CSS, and JavaScript. Combined they make the web page colorful, interactive, functional and well designed, also give the user a very good experience. </p>
+                    <a href="https://www.itonlinelearning.com/blog/html-css-and-javascript-essential-front-end-languages-explained/#:~:text=They%20allow%20developers%20to%20communicate,functionality%20to%20the%20web%20page." class="btn">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bx-globe'></i>
+                    <h3>Languages</h3>
+                    <p>I speak 3 languages fluently: English, French, and Arabic which make the communication with my client easier, and it allows them to express their thoughts and requirements in the language they are comfortable using.</p>
+                    <a href="https://www.verbalplanet.com/blog/why-learn-multiple-foreign-languages.asp#:~:text=Proficiency%20in%20multiple%20languages%20equips,communication%2C%20promoting%20empathy%20and%20understanding." class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- end services section-->
+
+        <!-- my work section -->
+        <section id="my-work-section">
+        <div class="work-container">
+            <h2 class="heading">My <span>Work</span></h2>
+            
+            <div class="work-wrapper">
+                <div class="work-box swiper mySwiper">
+                    <div class="work-content swiper-wrapper">
+                        <div class="work-slide swiper-slide">
+                            <img src="lebanon.jpg" alt="lebanon">
+                            <h3>Guide to Lebanon</h3>
+                            <p>Guid to Lebanon is a web page destined for tourists and people who like to know Lebanon better, and discover the incredible archaeological  places and nature of this beautiful country. </p>
+                            <a class="btn" href="https://tangerine-monstera-cec021.netlify.app">Take a Look</a>
+                        </div>
+                        <div class="work-slide swiper-slide">
+                            <img src="59d2b240-6598-402f-a437-d412bc8b24eb[1].jpg" alt="lebanon">
+                            <h3>My melody</h3>
+                            <p>My melody is a web page that allows the viewer to discover the history of music and its beginnings throughout history through ancient instruments and the first orchestra ever.</p>
+                            <a class="btn" href="https://mymelodyhistory.wordpress.com/">Take a Look</a>
+                        </div>
+                        <div class="work-slide swiper-slide">
+                            <img src="python-project.jpg" alt="lebanon">
+                            <h3>Fashion by Kawthar</h3>
+                            <p>Fashion by Kawthar is a clothing line and this project is a  chat bot that takes the customer order and prints the final bill, but by using python only as a language to create it .</p>
+                            <a class="btn" href="https://trinket.io/python/ba100fffb500">Take a Look</a> 
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+  
+                </div>
+            </div>
+         </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+        </script>
+         
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Kawthar | All Rights Reserved</p>
+            </div>
+            <div class="footer-icon">
+                <a href="#home"><i class='bx bxs-up-arrow-alt'></i></a>
+            </div>
+        </div>
+        <!-- animation -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </body>
+</html>
